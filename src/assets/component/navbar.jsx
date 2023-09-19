@@ -15,7 +15,8 @@ function Hexsa(){
       
     return (
         <nav className="pb-8">
-            <ul className="md:flex justify-around bg-neutral-400 mx-16">
+            <ul className={`md:flex justify-around bg-neutral-400 mx-16 
+            ${open ? 'top-12':'-top-60'}absolute px-6 md:static`}>
                 <div className="md:hidden" onClick={()=>setOpen(!open)}>
                     {
                        open === true ? <AiOutlineClose className="text-3xl text-white"></AiOutlineClose> :<FiMenu className="text-3xl  text-white "></FiMenu>
