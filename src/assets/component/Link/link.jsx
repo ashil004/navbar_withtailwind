@@ -7,7 +7,7 @@ function Link ({route}){
         
     )
 }
-Link.proptypes= {
+Link.propTypes= {
     route:PropTypes.object 
 }
 export default Link ;
